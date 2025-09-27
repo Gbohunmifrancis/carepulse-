@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SolveStation.PrescriptionManagement</name>
+    </assembly>
+    <members>
+        <member name="M:SolveStation.PrescriptionManagement.Controllers.PrescriptionsController.CreatePrescription(SolveStation.PrescriptionManagement.Models.CreatePrescriptionRequest,System.Threading.CancellationToken)">
+            Create a new prescription
+        </member>
+        <member name="M:SolveStation.PrescriptionManagement.Controllers.PrescriptionsController.GetPrescription(System.String,System.Threading.CancellationToken)">
+            <summary>
+            Get prescription by ID
+            </summary>
+        </member>
+        <member name="M:SolveStation.PrescriptionManagement.Controllers.PrescriptionsController.UpdatePrescription(System.String,SolveStation.PrescriptionManagement.Models.UpdatePrescriptionRequest,System.Threading.CancellationToken)">
+            <summary>
+            Update prescription (only when in Created status)
+            </summary>
+        </member>
+        <member name="M:SolveStation.PrescriptionManagement.Controllers.PrescriptionsController.SubmitPrescription(System.String,System.Threading.CancellationToken)">
+            <summary>
+            Submit prescription for filling
+            </summary>
+        </member>
+        <member name="M:SolveStation.PrescriptionManagement.Controllers.PrescriptionsController.FillPrescription(System.String,SolveStation.PrescriptionManagement.Models.FillPrescriptionRequest,System.Threading.CancellationToken)">
+            <summary>
+            Fill prescription (pharmacist action)
+            </summary>
+        </member>
+        <member name="M:SolveStation.PrescriptionManagement.Controllers.PrescriptionsController.CancelPrescription(System.String,SolveStation.PrescriptionManagement.Controllers.CancelPrescriptionRequest,System.Threading.CancellationToken)">
+            <summary>
+            Cancel prescription
+            </summary>
+        </member>
+        <member name="M:SolveStation.PrescriptionManagement.Controllers.PrescriptionsController.SearchPrescriptions(SolveStation.PrescriptionManagement.Models.PrescriptionSearchRequest,System.Threading.CancellationToken)">
+            <summary>
+            Search prescriptions with filters
+            </summary>
+        </member>
+        <member name="M:SolveStation.PrescriptionManagement.Controllers.PrescriptionsController.GetPrescriptionsByPatient(System.String,System.Threading.CancellationToken)">
+            <summary>
+            Get prescriptions by patient
+            </summary>
+        </member>
+        <member name="M:SolveStation.PrescriptionManagement.Controllers.PrescriptionsController.GetPrescriptionsByDoctor(System.String,System.Threading.CancellationToken)">
+            <summary>
+            Get prescriptions by doctor
+            </summary>
+        </member>
+        <member name="M:SolveStation.PrescriptionManagement.Controllers.PrescriptionsController.GetPendingPrescriptions(System.Threading.CancellationToken)">
+            <summary>
+            Get pending prescriptions (for pharmacists)
+            </summary>
+        </member>
+        <member name="M:SolveStation.PrescriptionManagement.Controllers.PrescriptionsController.GetExpiredPrescriptions(System.Threading.CancellationToken)">
+            <summary>
+            Get expired prescriptions
+            </summary>
+        </member>
+        <member name="M:SolveStation.PrescriptionManagement.Controllers.PrescriptionsController.DeletePrescription(System.String,System.Threading.CancellationToken)">
+            <summary>
+            Delete prescription (soft delete)
+            </summary>
+        </member>
+    </members>
+</doc>

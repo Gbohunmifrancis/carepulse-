@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SolveStation.Common</name>
+    </assembly>
+    <members>
+        <member name="T:SolveStation.Common.Extensions.CommonExtensions">
+            <summary>
+            Extension methods for common operations
+            </summary>
+        </member>
+        <member name="M:SolveStation.Common.Extensions.CommonExtensions.ToJson(System.Object,System.Text.Json.JsonSerializerOptions)">
+            <summary>
+            Converts object to JSON string
+            </summary>
+        </member>
+        <member name="M:SolveStation.Common.Extensions.CommonExtensions.FromJson``1(System.String,System.Text.Json.JsonSerializerOptions)">
+            <summary>
+            Converts JSON string to object
+            </summary>
+        </member>
+        <member name="M:SolveStation.Common.Extensions.CommonExtensions.IsNullOrEmpty(System.String)">
+            <summary>
+            Checks if string is null or empty
+            </summary>
+        </member>
+        <member name="M:SolveStation.Common.Extensions.CommonExtensions.IsNullOrWhiteSpace(System.String)">
+            <summary>
+            Checks if string is null, empty or whitespace
+            </summary>
+        </member>
+        <member name="M:SolveStation.Common.Extensions.CommonExtensions.SafeSubstring(System.String,System.Int32,System.Int32)">
+            <summary>
+            Safe substring operation
+            </summary>
+        </member>
+        <member name="M:SolveStation.Common.Extensions.CommonExtensions.ToUtc(System.DateTime)">
+            <summary>
+            Converts DateTime to UTC if not already
+            </summary>
+        </member>
+        <member name="M:SolveStation.Common.Extensions.CommonExtensions.Chunk``1(System.Collections.Generic.IEnumerable{``0},System.Int32)">
+            <summary>
+            Chunks an enumerable into batches of specified size
+            </summary>
+        </member>
+        <member name="M:SolveStation.Common.Extensions.CommonExtensions.If``1(``0,System.Boolean,System.Action{``0})">
+            <summary>
+            Executes an action if condition is true
+            </summary>
+        </member>
+        <member name="M:SolveStation.Common.Extensions.CommonExtensions.IfNotNull``1(``0,System.Action{``0})">
+            <summary>
+            Executes an action if object is not null
+            </summary>
+        </member>
+        <member name="M:SolveStation.Common.Extensions.CommonExtensions.OrDefault``1(``0,``0)">
+            <summary>
+            Returns default value if object is null
+            </summary>
+        </member>
+        <member name="M:SolveStation.Common.Extensions.CommonExtensions.Map``2(``0,System.Func{``0,``1})">
+            <summary>
+            Applies a function if object is not null
+            </summary>
+        </member>
+        <member name="T:SolveStation.Common.Interfaces.ISpecification`1">
+            <summary>
+            Generic specification pattern interface for complex queries
+            </summary>
+            <typeparam name="T">Entity type</typeparam>
+        </member>
+        <member name="T:SolveStation.Common.Interfaces.IDomainEventHandler`1">
+            <summary>
+            Interface for domain event handling
+            </summary>
+        </member>
+        <member name="T:SolveStation.Common.Interfaces.IDomainEventDispatcher">
+            <summary>
+            Interface for domain event dispatcher
+            </summary>
+        </member>
+        <member name="T:SolveStation.Common.Interfaces.ICacheService">
+            <summary>
+            Interface for caching operations
+            </summary>
+        </member>
+        <member name="T:SolveStation.Common.Interfaces.IAuditLogger">
+            <summary>
+            Interface for audit logging
+            </summary>
+        </member>
+        <member name="T:SolveStation.Common.Interfaces.INotificationService">
+            <summary>
+            Interface for notification services
+            </summary>
+        </member>
+        <member name="T:SolveStation.Common.Interfaces.IBackgroundJobService">
+            <summary>
+            Interface for background job processing
+            </summary>
+        </member>
+        <member name="T:SolveStation.Common.Models.Result">
+            <summary>
+            Represents the result of an operation that can succeed or fail
+            </summary>
+        </member>
+        <member name="T:SolveStation.Common.Models.Result`1">
+            <summary>
+            Represents the result of an operation that can succeed with a value or fail
+            </summary>
+            <typeparam name="T">The type of the success value</typeparam>
+        </member>
+        <member name="T:SolveStation.Common.Models.ResultExtensions">
+            <summary>
+            Result extensions for better usability
+            </summary>
+        </member>
+        <member name="T:SolveStation.Common.Specifications.BaseSpecification`1">
+            <summary>
+            Base specification implementation
+            </summary>
+            <typeparam name="T">Entity type</typeparam>
+        </member>
+        <member name="T:SolveStation.Common.Specifications.AndSpecification`1">
+            <summary>
+            AND specification combinator
+            </summary>
+            <typeparam name="T">Entity type</typeparam>
+        </member>
+        <member name="T:SolveStation.Common.Specifications.OrSpecification`1">
+            <summary>
+            OR specification combinator
+            </summary>
+            <typeparam name="T">Entity type</typeparam>
+        </member>
+        <member name="T:SolveStation.Common.Specifications.NotSpecification`1">
+            <summary>
+            NOT specification combinator
+            </summary>
+            <typeparam name="T">Entity type</typeparam>
+        </member>
+    </members>
+</doc>

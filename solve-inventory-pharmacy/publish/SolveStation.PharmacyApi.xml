@@ -1,0 +1,229 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SolveStation.PharmacyApi</name>
+    </assembly>
+    <members>
+        <member name="T:SolveStation.PharmacyApi.Controllers.AuthController">
+            <summary>
+            Authentication controller for user login and token management
+            </summary>
+        </member>
+        <member name="M:SolveStation.PharmacyApi.Controllers.AuthController.Login(SolveStation.PharmacyApi.Models.DTOs.LoginRequest)">
+            <summary>
+            Authenticate user and return JWT token
+            </summary>
+            <param name="request">Login credentials</param>
+            <returns>Authentication token and user information</returns>
+        </member>
+        <member name="M:SolveStation.PharmacyApi.Controllers.AuthController.RefreshToken(SolveStation.PharmacyApi.Models.DTOs.RefreshTokenRequest)">
+            <summary>
+            Refresh authentication token
+            </summary>
+            <param name="request">Refresh token request</param>
+            <returns>New authentication token</returns>
+        </member>
+        <member name="M:SolveStation.PharmacyApi.Controllers.AuthController.Logout">
+            <summary>
+            Logout user and invalidate token
+            </summary>
+            <returns>Success confirmation</returns>
+        </member>
+        <member name="M:SolveStation.PharmacyApi.Controllers.AuthController.GetCurrentUser">
+            <summary>
+            Get current user information
+            </summary>
+            <returns>Current user details</returns>
+        </member>
+        <member name="T:SolveStation.PharmacyApi.Controllers.BaseApiController">
+            <summary>
+            Base controller with common functionality for all API controllers
+            </summary>
+        </member>
+        <member name="M:SolveStation.PharmacyApi.Controllers.BaseApiController.GetCurrentUserId">
+            <summary>
+            Get the current user ID from the JWT token claims
+            </summary>
+            <returns>Current user ID</returns>
+        </member>
+        <member name="M:SolveStation.PharmacyApi.Controllers.BaseApiController.GetCurrentUserRole">
+            <summary>
+            Get the current user role from the JWT token claims
+            </summary>
+            <returns>Current user role</returns>
+        </member>
+        <member name="M:SolveStation.PharmacyApi.Controllers.BaseApiController.HasRole(System.String)">
+            <summary>
+            Check if the current user has a specific role
+            </summary>
+            <param name="role">Role to check</param>
+            <returns>True if user has the role</returns>
+        </member>
+        <member name="M:SolveStation.PharmacyApi.Controllers.BaseApiController.ErrorResponse(System.String,System.Int32)">
+            <summary>
+            Create a standardized error response
+            </summary>
+            <param name="message">Error message</param>
+            <param name="statusCode">HTTP status code</param>
+            <returns>Error response</returns>
+        </member>
+        <member name="M:SolveStation.PharmacyApi.Controllers.BaseApiController.SuccessResponse(System.Object,System.String)">
+            <summary>
+            Create a standardized success response with data
+            </summary>
+            <param name="data">Response data</param>
+            <param name="message">Success message</param>
+            <returns>Success response</returns>
+        </member>
+        <member name="T:SolveStation.PharmacyApi.Controllers.DrugsController">
+            <summary>
+            Drug inventory management controller
+            </summary>
+        </member>
+        <member name="M:SolveStation.PharmacyApi.Controllers.DrugsController.GetDrugs(SolveStation.PharmacyApi.Models.DTOs.DrugSearchRequest)">
+            <summary>
+            Search and get drugs with pagination and filtering
+            </summary>
+            <param name="request">Search criteria</param>
+            <returns>Paginated list of drugs</returns>
+        </member>
+        <member name="M:SolveStation.PharmacyApi.Controllers.DrugsController.GetDrug(System.Guid)">
+            <summary>
+            Get drug by ID
+            </summary>
+            <param name="id">Drug ID</param>
+            <returns>Drug details</returns>
+        </member>
+        <member name="M:SolveStation.PharmacyApi.Controllers.DrugsController.CreateDrug(SolveStation.PharmacyApi.Models.DTOs.CreateDrugRequest)">
+            <summary>
+            Create a new drug
+            </summary>
+            <param name="request">Drug creation data</param>
+            <returns>Created drug</returns>
+        </member>
+        <member name="M:SolveStation.PharmacyApi.Controllers.DrugsController.UpdateDrug(System.Guid,SolveStation.PharmacyApi.Models.DTOs.UpdateDrugRequest)">
+            <summary>
+            Update drug information
+            </summary>
+            <param name="id">Drug ID</param>
+            <param name="request">Updated drug data</param>
+            <returns>Updated drug</returns>
+        </member>
+        <member name="M:SolveStation.PharmacyApi.Controllers.DrugsController.UpdateStock(System.Guid,SolveStation.PharmacyApi.Models.DTOs.UpdateStockRequest)">
+            <summary>
+            Update drug stock quantity
+            </summary>
+            <param name="id">Drug ID</param>
+            <param name="request">Stock update data</param>
+            <returns>Updated drug</returns>
+        </member>
+        <member name="M:SolveStation.PharmacyApi.Controllers.DrugsController.GetLowStockDrugs">
+            <summary>
+            Get low stock drugs
+            </summary>
+            <returns>List of drugs with low stock</returns>
+        </member>
+        <member name="M:SolveStation.PharmacyApi.Controllers.DrugsController.GetExpiredDrugs">
+            <summary>
+            Get expired drugs
+            </summary>
+            <returns>List of expired drugs</returns>
+        </member>
+        <member name="M:SolveStation.PharmacyApi.Controllers.DrugsController.DeleteDrug(System.Guid)">
+            <summary>
+            Delete drug (soft delete)
+            </summary>
+            <param name="id">Drug ID</param>
+            <returns>Success confirmation</returns>
+        </member>
+        <member name="T:SolveStation.PharmacyApi.Controllers.HealthController">
+            <summary>
+            Health check and system status controller
+            </summary>
+        </member>
+        <member name="M:SolveStation.PharmacyApi.Controllers.HealthController.GetHealth">
+            <summary>
+            Basic health check endpoint
+            </summary>
+            <returns>System health status</returns>
+        </member>
+        <member name="M:SolveStation.PharmacyApi.Controllers.HealthController.GetDetailedHealth">
+            <summary>
+            Detailed health check with dependencies
+            </summary>
+            <returns>Detailed system health status</returns>
+        </member>
+        <member name="T:SolveStation.PharmacyApi.Controllers.UsersController">
+            <summary>
+            User management controller for CRUD operations on users
+            </summary>
+        </member>
+        <member name="M:SolveStation.PharmacyApi.Controllers.UsersController.GetUsers(System.Int32,System.Int32,System.String)">
+            <summary>
+            Get all users with pagination
+            </summary>
+            <param name="page">Page number</param>
+            <param name="pageSize">Items per page</param>
+            <param name="role">Filter by role</param>
+            <returns>Paginated list of users</returns>
+        </member>
+        <member name="M:SolveStation.PharmacyApi.Controllers.UsersController.GetUser(System.Guid)">
+            <summary>
+            Get user by ID
+            </summary>
+            <param name="id">User ID</param>
+            <returns>User details</returns>
+        </member>
+        <member name="M:SolveStation.PharmacyApi.Controllers.UsersController.CreateUser(SolveStation.PharmacyApi.Models.DTOs.CreateUserRequest)">
+            <summary>
+            Create a new user
+            </summary>
+            <param name="request">User creation data</param>
+            <returns>Created user</returns>
+        </member>
+        <member name="M:SolveStation.PharmacyApi.Controllers.UsersController.UpdateUser(System.Guid,SolveStation.PharmacyApi.Models.DTOs.UpdateUserRequest)">
+            <summary>
+            Update user profile
+            </summary>
+            <param name="id">User ID</param>
+            <param name="request">Updated user data</param>
+            <returns>Updated user</returns>
+        </member>
+        <member name="M:SolveStation.PharmacyApi.Controllers.UsersController.ChangePassword(System.Guid,SolveStation.PharmacyApi.Models.DTOs.ChangePasswordRequest)">
+            <summary>
+            Change user password
+            </summary>
+            <param name="id">User ID</param>
+            <param name="request">Password change data</param>
+            <returns>Success confirmation</returns>
+        </member>
+        <member name="M:SolveStation.PharmacyApi.Controllers.UsersController.DeactivateUser(System.Guid)">
+            <summary>
+            Deactivate user account
+            </summary>
+            <param name="id">User ID</param>
+            <returns>Success confirmation</returns>
+        </member>
+        <member name="T:SolveStation.PharmacyApi.Models.DTOs.PagedResult`1">
+            <summary>
+            Generic paginated result wrapper
+            </summary>
+            <typeparam name="T">Type of items</typeparam>
+        </member>
+        <member name="T:SolveStation.PharmacyApi.Services.IApiResponseService">
+            <summary>
+            Service for generating API responses in a consistent format
+            </summary>
+        </member>
+        <member name="T:SolveStation.PharmacyApi.Services.ApiResponse`1">
+            <summary>
+            Standard API response wrapper
+            </summary>
+        </member>
+        <member name="T:SolveStation.PharmacyApi.Services.PagedApiResponse`1">
+            <summary>
+            Paginated API response wrapper
+            </summary>
+        </member>
+    </members>
+</doc>
