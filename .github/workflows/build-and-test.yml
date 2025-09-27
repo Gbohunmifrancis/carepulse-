@@ -1,0 +1,30 @@
+name: 🏗️ Build
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+env:
+  DOTNET_VERSION: '8.0.x'
+
+jobs:
+  build:
+    name: 🔨 Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📋 Checkout code
+        uses: actions/checkout@v4
+
+      - name: 🛠️ Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: ${{ env.DOTNET_VERSION }}
+
+      - name: 🔄 Restore dependencies
+        run: dotnet restore src/SolveStation.PharmacyApi/SolveStation.PharmacyApi.csproj
+
+      - name: 🏗️ Build solution
+        run: dotnet build src/SolveStation.PharmacyApi/SolveStation.PharmacyApi.csproj --no-restore --configuration Release /p:RunCodeAnalysis=false /p:TreatWarningsAsErrors=false

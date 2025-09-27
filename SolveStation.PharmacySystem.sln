@@ -1,0 +1,94 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{AFD2E693-BBC0-4469-A942-F0E9A21C1591}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{E52E4051-4A7A-40A4-9E26-8EF4784BB0ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolveStation.Common", "src\SolveStation.Common\SolveStation.Common.csproj", "{FFCC621E-0B56-4CB7-86EF-AC917773F18E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolveStation.Data", "src\SolveStation.Data\SolveStation.Data.csproj", "{763EC939-680C-4420-9D50-A4BFF5168C24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolveStation.Authentication", "src\SolveStation.Authentication\SolveStation.Authentication.csproj", "{A1234567-1234-1234-1234-123456789ABC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolveStation.UserManagement", "src\SolveStation.UserManagement\SolveStation.UserManagement.csproj", "{9CE9D87A-45AE-405F-AC41-16445BCDB646}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolveStation.PharmacyApi", "src\SolveStation.PharmacyApi\SolveStation.PharmacyApi.csproj", "{C8CB6536-5058-4058-A87D-F9CE7527AB92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolveStation.PrescriptionManagement", "src\SolveStation.PrescriptionManagement\SolveStation.PrescriptionManagement.csproj", "{8349910A-6B00-48B4-A992-E7613F719B43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolveStation.UserManagement.Tests", "tests\SolveStation.UserManagement.Tests\SolveStation.UserManagement.Tests.csproj", "{4CE0780D-3515-4CF6-ABC0-763BDBE99B99}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolveStation.PrescriptionManagement.Tests", "tests\SolveStation.PrescriptionManagement.Tests\SolveStation.PrescriptionManagement.Tests.csproj", "{2CCDFFA9-10E8-4926-B2D7-6681568E3226}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolveStation.PharmacyApi.IntegrationTests", "tests\SolveStation.PharmacyApi.IntegrationTests\SolveStation.PharmacyApi.IntegrationTests.csproj", "{F93DCDDD-6833-46BC-95E7-C053FE5A1AE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolveStation.Authentication.Tests", "tests\SolveStation.Authentication.Tests\SolveStation.Authentication.Tests.csproj", "{9407D7E3-B9F7-4ABB-AF95-BF59B43451DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFCC621E-0B56-4CB7-86EF-AC917773F18E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFCC621E-0B56-4CB7-86EF-AC917773F18E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFCC621E-0B56-4CB7-86EF-AC917773F18E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFCC621E-0B56-4CB7-86EF-AC917773F18E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{763EC939-680C-4420-9D50-A4BFF5168C24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{763EC939-680C-4420-9D50-A4BFF5168C24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{763EC939-680C-4420-9D50-A4BFF5168C24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{763EC939-680C-4420-9D50-A4BFF5168C24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1234567-1234-1234-1234-123456789ABC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1234567-1234-1234-1234-123456789ABC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1234567-1234-1234-1234-123456789ABC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1234567-1234-1234-1234-123456789ABC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CE9D87A-45AE-405F-AC41-16445BCDB646}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CE9D87A-45AE-405F-AC41-16445BCDB646}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CE9D87A-45AE-405F-AC41-16445BCDB646}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CE9D87A-45AE-405F-AC41-16445BCDB646}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8CB6536-5058-4058-A87D-F9CE7527AB92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8CB6536-5058-4058-A87D-F9CE7527AB92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8CB6536-5058-4058-A87D-F9CE7527AB92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8CB6536-5058-4058-A87D-F9CE7527AB92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8349910A-6B00-48B4-A992-E7613F719B43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8349910A-6B00-48B4-A992-E7613F719B43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8349910A-6B00-48B4-A992-E7613F719B43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8349910A-6B00-48B4-A992-E7613F719B43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CE0780D-3515-4CF6-ABC0-763BDBE99B99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CE0780D-3515-4CF6-ABC0-763BDBE99B99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CE0780D-3515-4CF6-ABC0-763BDBE99B99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CE0780D-3515-4CF6-ABC0-763BDBE99B99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CCDFFA9-10E8-4926-B2D7-6681568E3226}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CCDFFA9-10E8-4926-B2D7-6681568E3226}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CCDFFA9-10E8-4926-B2D7-6681568E3226}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CCDFFA9-10E8-4926-B2D7-6681568E3226}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F93DCDDD-6833-46BC-95E7-C053FE5A1AE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F93DCDDD-6833-46BC-95E7-C053FE5A1AE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F93DCDDD-6833-46BC-95E7-C053FE5A1AE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F93DCDDD-6833-46BC-95E7-C053FE5A1AE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9407D7E3-B9F7-4ABB-AF95-BF59B43451DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9407D7E3-B9F7-4ABB-AF95-BF59B43451DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9407D7E3-B9F7-4ABB-AF95-BF59B43451DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9407D7E3-B9F7-4ABB-AF95-BF59B43451DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FFCC621E-0B56-4CB7-86EF-AC917773F18E} = {AFD2E693-BBC0-4469-A942-F0E9A21C1591}
+		{763EC939-680C-4420-9D50-A4BFF5168C24} = {AFD2E693-BBC0-4469-A942-F0E9A21C1591}
+		{A1234567-1234-1234-1234-123456789ABC} = {AFD2E693-BBC0-4469-A942-F0E9A21C1591}
+		{9CE9D87A-45AE-405F-AC41-16445BCDB646} = {AFD2E693-BBC0-4469-A942-F0E9A21C1591}
+		{C8CB6536-5058-4058-A87D-F9CE7527AB92} = {AFD2E693-BBC0-4469-A942-F0E9A21C1591}
+		{8349910A-6B00-48B4-A992-E7613F719B43} = {AFD2E693-BBC0-4469-A942-F0E9A21C1591}
+		{4CE0780D-3515-4CF6-ABC0-763BDBE99B99} = {E52E4051-4A7A-40A4-9E26-8EF4784BB0ED}
+		{2CCDFFA9-10E8-4926-B2D7-6681568E3226} = {E52E4051-4A7A-40A4-9E26-8EF4784BB0ED}
+		{F93DCDDD-6833-46BC-95E7-C053FE5A1AE7} = {E52E4051-4A7A-40A4-9E26-8EF4784BB0ED}
+		{9407D7E3-B9F7-4ABB-AF95-BF59B43451DB} = {E52E4051-4A7A-40A4-9E26-8EF4784BB0ED}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {336BFA76-1747-4986-9E38-D48E8E1A03CF}
+	EndGlobalSection
+EndGlobal
